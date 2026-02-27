@@ -34,7 +34,7 @@ export default function Navbar({ isMenuOpen, setIsMenuOpen, scrollToSection }) {
           <button onClick={() => scrollToSection('case-studies')} className="text-left hover:text-blue-500 transition">Case Studies</button>
           <button onClick={() => scrollToSection('industries')} className="text-left hover:text-blue-500 transition">Industries</button>
           <button onClick={() => scrollToSection('expertise')} className="text-left hover:text-blue-500 transition">Technical Expertise</button>
-          <button onClick={() => scrollToSection('solutions')} className="text-left hover:text-blue-500 transition">Dashboard Solutions</button>
+          <button onClick={() => scrollToSection('dashboard')} className="text-left hover:text-blue-500 transition">Dashboard Solutions</button>
           <button onClick={() => scrollToSection('process')} className="text-left hover:text-blue-500 transition">My Process</button>
           
           <div className="pt-10 border-t border-slate-800">
