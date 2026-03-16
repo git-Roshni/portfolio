@@ -3,7 +3,7 @@ export default function Navbar({ isMenuOpen, setIsMenuOpen, scrollToSection }) {
   return (
     <>
       {/* --- BURGER BUTTON --- */}
-      <nav className="fixed top-6 left-6 z-[100]">
+      <nav className="fixed top-3 left-6 z-[100]">
         <button 
           onClick={() => setIsMenuOpen(!isMenuOpen)}
           className="w-12 h-12 bg-blue-600 hover:bg-blue-500 rounded-full flex items-center justify-center shadow-2xl transition-all active:scale-90"
@@ -31,10 +31,12 @@ export default function Navbar({ isMenuOpen, setIsMenuOpen, scrollToSection }) {
           <p className="text-slate-500 text-xs uppercase tracking-widest mb-4">Navigation</p>
           
           
-          <button onClick={() => scrollToSection('case-studies')} className="text-left hover:text-blue-500 transition">Case Studies</button>
-          <button onClick={() => scrollToSection('industries')} className="text-left hover:text-blue-500 transition">Industries</button>
-          <button onClick={() => scrollToSection('expertise')} className="text-left hover:text-blue-500 transition">Technical Expertise</button>
-          <button onClick={() => scrollToSection('process')} className="text-left hover:text-blue-500 transition">My Process</button>
+          <button onClick={() => scrollToSection('objective')} className="text-left hover:text-blue-500 transition">Case Study Brief</button>
+          <button onClick={() => scrollToSection('dataset')} className="text-left hover:text-blue-500 transition">Data & Methodology</button>
+          <button onClick={() => scrollToSection('dashboard')} className="text-left hover:text-blue-500 transition">Dashboard</button>
+          <button onClick={() => scrollToSection('segments')} className="text-left hover:text-blue-500 transition">Key insights</button>
+          <button onClick={() => scrollToSection('strategy')} className="text-left hover:text-blue-500 transition">Retention Strategy</button>
+          <button onClick={() => scrollToSection('outcome')} className="text-left hover:text-blue-500 transition">Expected Business Impact</button>
           
           <div className="pt-10 border-t border-slate-800">
             <a 

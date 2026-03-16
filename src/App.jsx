@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-route
 import ReactGA from 'react-ga4';
 import Home from './Pages/Home';
 import RetialStudy1 from './Pages/RetaialStudy1';
+import CustomerChurnStudy from './Pages/CustomerChurn';
 
 function AnalyticsTracker() {
   const location = useLocation();
@@ -33,6 +34,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/case-study/retail" element={<RetialStudy1 />} />
+        <Route path="/case-study/churn" element={<CustomerChurnStudy />} />
       </Routes>
     </Router>
       <footer className="bg-slate-950 text-slate-400 py-12 px-10 border-t border-slate-900">

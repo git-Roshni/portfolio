@@ -31,6 +31,34 @@ export default function CaseStudies() {
                 </Link>
               </div>
 
+              
+              {/* Retail Analysis Brief */}
+              <div className="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 flex flex-col md:flex-row justify-between items-center gap-6">
+                <div className="md:max-w-2xl">
+                  <h3 className="text-2xl font-bold text-slate-900 mb-3">
+                    Customer Churn Analysis & Retention Strategy
+                  </h3>
+                  <p className="text-slate-600 mb-4">
+                    Identified early churn signals by analyzing customer inactivity, satisfaction 
+                    levels, and membership tiers. The study uncovered high-risk customer segments 
+                    and recommended targeted retention strategies to improve loyalty and 
+                    increase repeat purchases.
+                  </p>
+                  <div className="flex gap-4">
+                    <span className="text-xs font-bold bg-blue-50 text-blue-600 px-3 py-1 rounded">Power BI</span>
+                    <span className="text-xs font-bold bg-green-50 text-green-600 px-3 py-1 rounded">EDA using Python</span>
+                    <span className="text-xs font-bold bg-purple-50 text-purple-600 px-3 py-1 rounded">Customer behaviour Analysis</span>
+                  </div>
+                </div>
+                
+                <Link 
+                  to="/case-study/churn" 
+                  className="mt-6 inline-block bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-xl transition-all hover:scale-105 shadow-lg"
+                >
+                  View Full Case Study
+                </Link>
+              </div>
+
               {/* Placeholder for your next project */}
               <div className="bg-slate-100 p-8 rounded-2xl border-2 border-dashed border-slate-300 flex items-center justify-center">
                 <p className="text-slate-400 font-medium italic">New Case Study Coming Soon...</p>
